@@ -12,6 +12,9 @@ This is a Flask‐based AI‐powered blog post generator. Given a keyword, it do
 ## Installation & Setup
 
 ## Running Locally
+```bash
+curl "http://localhost:80/generate?keyword=Wireless%20Headphones"
+```
 
 ## Project Structure
 
