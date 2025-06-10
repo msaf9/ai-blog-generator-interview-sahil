@@ -5,7 +5,9 @@
 
 KEYWORD="wireless earbuds"
 TIMESTAMP=$(date +"%Y%m%d_%H%M%S")
-OUTPUT_FILE="daily_${KEYWORD// /_}_${TIMESTAMP}.json"
+OUTPUT_DIR="output"
+mkdir -p "$OUTPUT_DIR"
+OUTPUT_FILE="${OUTPUT_DIR}/daily_${KEYWORD// /_}_${TIMESTAMP}.json"
 
 # URL-encode the keyword for the query string
 ENCODED_KEYWORD=$(python3 - <<EOF
