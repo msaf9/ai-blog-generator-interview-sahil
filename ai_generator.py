@@ -41,7 +41,7 @@ def generate_blog_post(keyword: str, seo_data: dict) -> str:
     prompt = build_prompt(keyword, seo_data)
 
     response = openai.chat.completions.create(
-        model="gpt-4.1-mini",   # or "gpt-3.5-turbo"
+        model="gpt-4.1",   # or "gpt-3.5-turbo"
         messages=[
             { "role": "system", "content": "You are a helpful assistant." },
             { "role": "user",   "content": prompt }
